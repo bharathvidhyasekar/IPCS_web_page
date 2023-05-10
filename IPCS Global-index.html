@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>IPCS-Global</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="stylesheet" type="text/css" href="./css/style1.css">
+    <script type="text/javascript" src="./js/vali.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google We    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<body class="relative" id="rela">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!--pop_up-->
+    <div class= >   
+    <div class="firstdiv mb-5" id="pop-up">
+
+<center> <div><img decoding="async" width="200px" height="100px" src="https://ipcsglobal.com/campaign/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-29-at-4.17.45-PM-e1682765578907.jpeg" class="attachment-full size-full wp-image-24" alt="" loading="lazy" srcset="https://ipcsglobal.com/campaign/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-29-at-4.17.45-PM-e1682765578907.jpeg 1043w, https://ipcsglobal.com/campaign/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-29-at-4.17.45-PM-e1682765578907-300x115.jpeg 300w, https://ipcsglobal.com/campaign/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-29-at-4.17.45-PM-e1682765578907-1024x393.jpeg 1024w, https://ipcsglobal.com/campaign/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-29-at-4.17.45-PM-e1682765578907-768x295.jpeg 768w" sizes="(max-width:) 100vw, 1043px"></div></center><h2 class="regs">Registration</h2><hr>
+
+    <center> <div class="login"> <input type="text" name="fname" placeholder="Enter your Name" class="input" id="name" >
+        <br>
+    <input type="text" name="email" placeholder="Email" id="mail" class="input"><br>
+        <input type="text" id="mobile" name="num" placeholder="Mobile Number" class="input" ><br>
+        <button onclick="validate()" class="submit">Submit</button><br>
+    </div></center>
+        
+        <span id="show"></span></center></div>
+ </div>
+ <!--pop_up end-->
+ <div class="joinbg mb-5" id="joinbg">
+
+        <div class="join" id="join"><center>
+        <div id="close" onclick="closex()"><button class="fa fa-close close-button"></button></div>
+        <input type="text" name="" placeholder="Name" class="inp" id="joinname"><br>
+        <input type="text" name="" placeholder="Mobile Number" class="inp" id="joinnumber"><br>
+        <input type="text" name="" placeholder="Email" class="inp" id="joinemail"><br>
+        <select id="option">
+        <option class="opasity" value="Choose Course" hidden>Choose Course</option>  
+        <option value="Industrial Automation">Industrial Automation</option>
+        <option value="Digital Marketing">Digital Marketing</option>
+        <option value="Web Development">Web Development</option></select><br>
+        <textarea rows="4" cols="25" name="comment" placeholder="   Message" id="message1"></textarea>
+<br>
+        <button onclick="joinnow()">Join now</button></center>
+    </div>
+
+    </div></div>
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0" id="visible">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <img decoding="async" width="200px" height="70px" src="https://ipcsglobal.com/campaign/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-29-at-4.17.45-PM-e1682765578907.jpeg" class="attachment-full size-full wp-image-24" alt="" loading="lazy" srcset="https://ipcsglobal.com/campaign/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-29-at-4.17.45-PM-e1682765578907.jpeg 1043w, https://ipcsglobal.com/campaign/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-29-at-4.17.45-PM-e1682765578907-300x115.jpeg 300w, https://ipcsglobal.com/campaign/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-29-at-4.17.45-PM-e1682765578907-1024x393.jpeg 1024w, https://ipcsglobal.com/campaign/wp-content/uploads/2023/05/WhatsApp-Image-2023-04-29-at-4.17.45-PM-e1682765578907-768x295.jpeg 768w" >
+            
+        </a>
+
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+         
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            
+                </div>
+               
+            </div><button id="hide" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" onclick="join()">Join Now</button>
+            
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Offline Courses</h5>
+                                <h1 class="display-3 text-white animated slideInDown">India’s #1 Industrial Automation Training & Job Provider</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">The Best Learning Platform.</p>
+
+                                <a href="file:///C:/Users/ELCOT/Desktop/IPCS%20Global(web%20page)/ipcs%20download.pdf"download><button id class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" onclick="show()">Download Brochure</button></a>
+                                <button  class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"style="background-color: white; color: black;" onclick="join()">Join Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Get Educated Online From Your Home</h1>
+                                <p class="fs-5 text-white mb-4 pb-2"></p>
+                                <a href="file:///C:/Users/ELCOT/Desktop/IPCS%20Global(web%20page)/ipcs%20download.pdf" download class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Download Brochure</a>
+                                <button  class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"style="background-color: white; color: black;" onclick="join()">Join Now</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h5 class="mb-3">Skilled Instructors</h5>
+                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5 class="mb-3">Online Classes</h5>
+                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-industry text-primary mb-4"></i>
+                            <h5 class="mb-3">Industrial Projects</h5>
+                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-laptop text-primary mb-4"></i>
+                            <h5 class="mb-3">Web Development</h5>
+                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="C:\Users\ELCOT\Downloads\robot-hand-presses-button-mechanical-gear_1150-43060.avif" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">View our courses</h6>
+                    <h1 class="mb-4">Why Industrial Automation.?</h1>
+                    <p class="mb-4">The World as we know is rapidly shifting to Automated systems as quickly as you can imagine. The Covid crisis made the whole world realize that the World can come to a stand still mode & we cannot depend on man power on all the time. Thus, boosting the demand of Industrial Automation; the World has seen a rise in Industrial Automation sector of approx. 285% post Covid. The World in the coming years is going to be dependent on People who can control Automated Systems. If you ask is Industrial Automation relevant at this point of time, we would say; It’s the one & only future.</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"  style="cursor: pointer;" onclick="message()" ><i class="fa fa-arrow-right text-primary me-2" ></i><b> Professional Diploma in Industrial Automation.</b></p>
+                            <span id="message">Purely dedicated for Freshers, providing the real time exposure of Industries to which they look to build a Career. Unique course provided only at IPCS concentrating on Various Industries like Cement, Machinery, Food Industry & much more. The sole target of the program is to make freshers equipped for the Core Industry.</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"style="cursor:pointer;" onclick="message2()"><i class="fa fa-arrow-right text-primary me-2" ></i><b>DCS Engineering & Maintenance.</b></p>
+                            <span id="message2">Distributive Control Systems, one of the most advanced sections in Automation stream. IPCS is the only company to provide full hands-on training on the same with advanced modules. Program specifically chosen by Professionals as well as Students who look forward to have a glimpse into advanced automation.</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"style="cursor:pointer;" onclick="message3()"><i class="fa fa-arrow-right text-primary me-2" ></i><b>Automation System Engineer.</b></p>
+                            <span id="message3">The trademark program provided with 100% Practical Sessions & real-time equipment. In depth course module with advanced classes on PLC, SCADA, HMI, VFD, DCS & Control Panel. Course which is chosen by Freshers as well as Professionals at the same time. 100% Placement oriented program with classes from Industry Experienced Trainers.</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0" style="cursor:pointer;" onclick="message4()"><i class="fa fa-arrow-right text-primary me-2"></i><b>Electrical Control & Panel Designing.</b></p>
+                            <span id="message4">A full dedicated course on hands on exposure on Control panel Designing & Wiring. All IPCS branches are equipped with Industry grade Control Panel models & students can get the real time exposure on how to deal with the same effectively in any mode of the industries</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"style="cursor:pointer;" onclick="message5()"><i class="fa fa-arrow-right text-primary me-2"></i><b>Advanced Automation System Professional-4 PLC.</b></p>
+                            <span id="message5">A program dedicated for Specific customers who wants to customize the topics in which they need a practical exposure. A tailor-made program which can be altered to suit the needs of both Freshers as well as Professionals covering all the major sections in Automation like PLC, SCADA, HMI, VFD & Control Panel.</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0" style="cursor:pointer;" onclick="message6()"><i class="fa fa-arrow-right text-primary me-2" ></i><b>Customize Programming PLC SCADA.</b></p>
+                            <span id="message6">Customized program on PLC / SCADA / HMI / VFD to provide individual training on each one or anyone of the selected components as per the customers requirement. Chosen by Working professionals usually to get in depth knowledge in the brand that they work on. Practical training sessions coordinated by Experienced professionals.</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"style="cursor:pointer;" onclick="message7()"><i class="fa fa-arrow-right text-primary me-2"></i><b>Advanced PLC Program Professional.</b></p>
+                            <span id="message7">Program specially dedicated for working professionals who needs to focus on a particular brand like Siemens, Alen Bradley, Mitsubishi, Delta etc. IPCS Branches house a wide variety of brands related to Industrial Automation stream let it be PLC, HMI or VFD. Customers can choose which brand expertise they want to develop & work out the Training plan as per that.</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"style="cursor:pointer;" onclick="message8()"><i class="fa fa-arrow-right text-primary me-2"></i><b>Industrial Networking.</b></p>
+                            <span id="message8">One of the most essential parts in all of Automation or any related electrical segment is Networking. IPCS provides in depth & dedicated training on the same with sessions conducted by Industry experienced professionals.</span>
+                    </div>
+                    <!--<a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Categories Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
+                <h1 class="mb-5">Courses Categories</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img src="https://www.st.com/content/dam/Application_Pages-Image_Repository/Industrial/Factory-Automation/industrial-robotics.jpg" jsaction="VQAsE" class="r48jcc pT0Scc iPVvYb" style="max-width: 850px; height: 311px; margin: 0px; width: 700px;" alt="Factory Automation - Solutions for Industrial Automation -  STMicroelectronics" jsname="kn3ccd" aria-hidden="false">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Industrial Automation</h5>
+                                    <small class="text-primary"></small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Digital Marketing</h5>
+                                    <small class="text-primary"></small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-3.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Python Web Development</h5>
+                                    <small class="text-primary"></small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <!--<a class="position-relative d-block h-100 overflow-hidden" href="">-->
+                        <!--<img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">-->
+                        <h1>Why IPCS Global.?</h1>
+<p>IPCS Global Solutions – Found on 2008, Considered as one of the best Technical Training Provider in the World with over 30+ Branches across the World. Renowned for the World class Training facilities & Practical oriented sessions conducted by Industry Experienced Trainers, there are no clear match for IPCS Quality in the market. With an ample reach in the World market with presence over 50+ Countries in terms of Projects, Corporate & Students Training; IPCS holds a dedicated Placement Cell for supporting the students in Job hunting as well. If you are looking to enter the World of Automation; look no further, as you have reached the Prime in Market.</p>
+                  <div ><button class="download" >
+            <a href="file:///C:/Users/ELCOT/Desktop/IPCS%20Global(web%20page)/ipcs%20download.pdf"download class="elementor-button-link elementor-button elementor-size-sm elementor-animation-float" role="button">
+                        <span class="elementor-button-content-wrapper">
+                            <span class="elementor-button-icon elementor-align-icon-right">
+                <i aria-hidden="true" class="fas fa-download" id="download"></i></span>
+                        <label class="download1">Download Brochure</lable></button>
+        </span>
+                    </a>
+        </div>
+                
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
+                            <h5 class="m-0"></h5>
+                            <small class="text-primary"></small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories Start -->
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">About</h6>
+                <h1 class="mb-5">Govt. & International Certifications</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                                                       <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                               <!-- <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>-->
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">15,000 +</h3>
+                            <div class="mb-3">
+                                <!--<small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>()</small>-->
+                            </div>
+                            <h5 class="mb-4">Trained Professionals</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                           <!-- <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <!--<img class="img-fluid" src="img/course-2.jpg" alt="">-->
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <!--<a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>-->
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">12,000 +</h3>
+                            <div class="mb-3">
+                               <!-- <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>-->
+                            </div>
+                            <h5 class="mb-4">Placed Professionals</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <!--<small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                           <!-- <img class="img-fluid" src="img/course-3.jpg" alt="">-->
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                               <!-- <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>-->
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">50+</h3>
+                            <div class="mb-3">
+                                <!--<small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>-->
+                            </div>
+                            <h5 class="mb-4">Presence Across Countries</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <!--<small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">IPCS Globle</h6>
+                <h1 class="mb-5">Expert In</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                           <!-- <img class="img-fluid" src="img/team-1.jpg" alt="">-->
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <!--<a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>-->
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <i class="fa fa-3x fa-industry text-primary mb-4"></i>
+                            <h5 class="mb-0">Industry Experienced Trainers</h5>
+                            <small><small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <!--<img class="img-fluid" src="img/team-2.jpg" alt="">-->
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <!--<a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>-->
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h5 class="mb-0">International&Govt.
+                            Certification</h5>
+                            <small><small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                           <!-- <img class="img-fluid" src="img/team-3.jpg" alt="">--> 
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <!--<a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>-->
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <i class="fa fa-3x fa-award text-primary mb-4"></i>
+                            <h5 class="mb-0">100%<br> Practical Training</h5>
+                            <small><small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <!--<img class="img-fluid" src="img/team-4.jpg" alt="">-->
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                            <!-- <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>-->
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <i class="fa fa-3x fa-handshake text-primary mb-4"></i>
+                            <h5 class="mb-0">Dedicated Placement
+                            Cell Support</h5>
+                            <small><small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="mb-5">Our Students Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="C:\Users\ELCOT\Downloads\250x250_Jayalal-J.jpeg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Jayal-J</h5>
+                    <p></p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">"I am a professional working in the automation industry. I owe my success to IPCS Global for giving me the best training in automation and assisting in getting m dream job and a secure career. Thank you team IPCS Global".</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="C:\Users\ELCOT\Downloads\250x250_Jyothish-K-George.jpeg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Jyothish-K-George</h5>
+                    <p></p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">"As an industrial automation student, I was able to learn the fundamental lessons in automation from IPCS Global and explore more on the subject with the help of my trainers who are experts in the topic".</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="C:\Users\ELCOT\Downloads\250x250_Pooja-Sasedharan.jpeg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Pooja-Sasedharan</h5>
+                    <p></p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">"IPCS Global is reputed for being the best in their field due to their dedication and sincerity in ensuring that the students in automation excel in the subject by the time they complete the course. The institute also guarantees 100% placement assistance to all its students".</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="C:\Users\ELCOT\Downloads\250x250_Abhijith-K.jpeg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Abhijith-K</h5>
+                    <p></p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">"I recommend IPCS Global for students aspiring for a career in industrial automation. Their syllabus includes a wide array of modules in PLC, SCADA, DCS, VFD, and much more. Their training methods are highly practice-oriented and thus very beneficial for real-life applications in the automation industry".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Location</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31329.926154829023!2d76.969275188977!3d11.020553729796015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858ff8d987635%3A0x2b6be4a19f274dd3!2sIPCS%20Automation%20PLC%20%7C%20SCADA%20%7C%20BMS%20%7C%20CCTV%20%7C%20Embedded%20%7C%20Robotics!5e0!3m2!1sen!2sin!4v1683356679166!5m2!1sen!2sin" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!--<a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>-->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@ipcsglobal.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/ipcs_global/" target="blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/ipcsglobal" target="blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/c/IPCSAutomationPLCSCADABMSCCTVCADTraining" target="blank"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/ipcs-global/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            <div class="col-lg-3 col-md-6">
+                
+
+                    <!-- <h4 class="text-white mb-3">Gallery</h4> -->
+                    <!-- <div class="row g-2 pt-2"> -->
+                        <!-- <div class="col-4"> -->
+                            <!--<img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>-->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <a class="border-bottom" href="#">Copyright © 2023 IPCS Global</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                     <a class="border-bottom" href="https://htmlcodex.com">Powered by IPCS Technologies</a><br>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                       <!-- <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
